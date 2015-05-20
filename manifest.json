@@ -24,7 +24,7 @@
     {
       "matches": ["http://*/*"],
       "css": ["styles/content.css"],
-      "js": ["scripts/jquery.js", "scripts/content.js"],
+      "js": ["scripts/jquery.js", "scripts/draggable.js", "scripts/content.js"],
       "run_at": "document_end"
     }
   ],

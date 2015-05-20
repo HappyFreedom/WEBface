@@ -1,20 +1,111 @@
-#WEBFace_Informer {
+.InfoWin {
     display: inline-block;
+    position: fixed;
+    z-index: 999;
+
+    width: 163px;
+    height: 250px;
+
     padding: 5px;
+
+    box-shadow: black 2px 2px 5px;
     background-color: beige;
     border: 1px solid burlywood;
     border-radius: 5px;
     cursor: default;
-    font-size: 18px;
-    position: absolute;
+
+    font-size: 14px;
+}
+
+.InfoWin .Caption {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.InfoWin .Separator {
+    margin: 3px 0px;
+    border-style: solid;
+    border-color: burlywood;
+    color: white;
+}
+
+.InfoWin .List {
+}
+
+.InfoWin .List .Node {
+    margin: 3px 0px;
+}
+
+.InfoWin .List .Node:hover .Info {
+    border-left-color: black;
+}
+
+.InfoWin .List .Node:hover .Submit {
+    border-right-color: black;
+}
+
+.InfoWin .List .Node .Info {
+    display: inline-block;
+    width: 75px;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: middle;
+
+    margin: 0px;
+    padding: 0px 5px;
+
+    color: gray;
+
+    border: 1px solid burlywood;
+    border-left-width: 2px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.InfoWin .List .Node .Submit {
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    vertical-align: top;
+
+    margin: 0px 0px;
+    padding: 0px;
+
+    color: white;
+
+    background-color: burlywood;
+
+    border-style: none;
+    border-radius: 0px 5px 5px 0px;
+    border-right: 2px solid burlywood;
+}
+
+.InfoWin .List .Node .Submit:hover {
+    border-right-colort: white;
+}
+
+.InfoWin .List .Node .Submit:active {
+    background: -webkit-linear-gradient(left, burlywood 0%, beige 100%);
+    border-right-color: burlywood;
+}
+
+.InfoWin .List .Node .Submit:focus {
+    outline: none;
+}
+
+#WEBFace_CurrentElements {
     top: 10px;
     left: 10px;
-    box-shadow: black 2px 2px 5px;
+}
+
+#WEBFace_RemovedElements {
+    top: 280px;
+    left: 10px;
 }
 
 #WEBFace_Highlighter {
      position: absolute;
      background-color: blue;
      opacity: 0.4;
-     z-index: 100;
+     z-index: 998;
  }
